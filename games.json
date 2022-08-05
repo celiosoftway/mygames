@@ -1,1 +1,13 @@
-teste
+{
+    "gamesNFT":[
+        {"nome": "Gnome Mines", "site":"www.google.com"},
+        {"nome": "Tap Fantasy", "site":"www.google.com"},
+        {"nome": "Play Poseidon", "site":"www.google.com"},
+        {"nome": "GiantN", "site":"www.google.com"},
+        {"nome": "Idle Luca", "site":"www.google.com"},
+        {"nome": "Lost Centuria", "site":"www.google.com"},
+        {"nome": "Chromatic Sous", "site":"www.google.com"},
+        {"nome": "Pocket Battles", "site":"www.google.com"},
+        {"nome": "Hero Blaze", "site":"www.google.com"},
+    ]
+}
