@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
     <meta charset="UTF-8">
@@ -7,111 +7,153 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
     <title>Cards Responsivos</title>
+    
+    <script>
+      async function requestData() {
+        const requestURL = 'https://celiosoftway.github.io/mygames/games.json';
+        const request = new Request(requestURL);
+        const response = await fetch(request);
+        const gamesNFT = await response.text();
+        const game = JSON.parse(gamesNFT);
+  
+        var vjson = '[{"nome": "Gnome Mines", "site":"www.google.com"},{"nome": "Tap Fantasy", "site":"www.google.com"}]';
+        var data = JSON.parse(vjson);
+        
+        console.log(game.gamesNFT[0].nome);
+        console.log(game.gamesNFT[0].site);
+      };
+      
+      requestData();
+    </script>
 </head>
  
 <body>
-    <div class="container">
-        <div class="card">
-            <div class="icon">
-            <img src="img/Gnome Mines.png">
-            </div>
-            <h1>Gnome Mines</h1>
-            <div class="content">
-                <p> Lorem ipsum, dolor sit </p>
-                <a href="#">Read More</a>
-            </div>
+  <div class="container">
+    <div class="card">
+        <div class="icon">
+        <img src="img/Gnome Mines.png">
         </div>
-
-        <div class="card">
-            <div class="icon">
-            <img src="img/tap_fantasy.jpg">
-            </div>
-            <h1>Tap Fantasy</h1>
-            <div class="content">
-                <p> Lorem ipsum, dolor sit </p>
-                <a href="#">Read More</a>
-            </div>
+        <h1>Gnome Mines</h1>
+        <div class="content">
+            <p> Free to play: N&atilde;o </p>
+            <p> Ultimo saque: 99/99/9999</p>
+            <p> Dias jogando: 15 </p>
+            <p> Lucro: USD 10 </p>
+            <a href="https://app.gnomemines.com/" target="_blank">Site Oficial</a>
         </div>
-
-        <div class="card">
-            <div class="icon">
-            <img src="img/playposeidon.jpg">
-            </div>
-            <h1>Play Poseidon</h1>
-            <div class="content">
-                <p> Lorem ipsum, dolor sit </p>
-                <a href="#">Read More</a>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="icon">
-            <img src="img/pocketbattlesnftwar.jpg">
-            </div>
-            <h1>Pocket Battles</h1>
-            <div class="content">
-                <p> Lorem ipsum, dolor sit </p>
-                <a href="#">Read More</a>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="icon">
-            <img src="img/giantN2.jpg">
-            </div>
-            <h1>GiantN</h1>
-            <div class="content">
-                <p> Lorem ipsum, dolor sit </p>
-                <a href="#">Read More</a>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="icon">
-            <img src="img/idleluca.jpg">
-            </div>
-            <h1>Idle Luca</h1>
-            <div class="content">
-                <p> Lorem ipsum, dolor sit </p>
-                <a href="#">Read More</a>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="icon">
-            <img src="img/ChromaticSouls.jpg">
-            </div>
-            <h1>Chromatic Souls</h1>
-            <div class="content">
-                <p> Lorem ipsum, dolor sit </p>
-                <a href="#">Read More</a>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="icon">
-            <img src="img/Lost_Centuria.jpg">
-            </div>
-            <h1>Lost Centuria</h1>
-            <div class="content">
-                <p> Lorem ipsum, dolor sit </p>
-                <a href="#">Read More</a>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="icon">
-            <img src="img/Heroblaze.jpg">
-            </div>
-            <h1>Hero Blaze</h1>
-            <div class="content">
-                <p> Lorem ipsum, dolor sit </p>
-                <a href="#">Read More</a>
-            </div>
-        </div>
-
     </div>
 
-</body>
+    <div class="card">
+        <div class="icon">
+        <img src="img/tap_fantasy.jpg">
+        </div>
+        <h1>Tap Fantasy</h1>
+        <div class="content">
+            <p> Free to play: Sim </p>
+            <p> Ultimo saque: 99/99/9999</p>
+            <p> Dias jogando: 15 </p>
+            <p> Lucro: USD 10 </p>
+            <a href="https://tapfantasy.io/" target="_blank">Site Oficial</a>
+        </div>
+    </div>
 
+    <div class="card">
+        <div class="icon">
+        <img src="img/playposeidon.jpg">
+        </div>
+        <h1>Play Poseidon</h1>
+        <div class="content">
+            <p> Free to play: Sim </p>
+            <p> Ultimo saque: 99/99/9999</p>
+            <p> Dias jogando: 15 </p>
+            <p> Lucro: USD 10 </p>
+            <a href="https://playposeidon.io/" target="_blank">Site Oficial</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="icon">
+        <img src="img/pocketbattlesnftwar.jpg">
+        </div>
+        <h1>Pocket Battles</h1>
+        <div class="content">
+            <p> Free to play: Sim </p>
+            <p> Ultimo saque: 99/99/9999</p>
+            <p> Dias jogando: 15 </p>
+            <p> Lucro: USD 10 </p>
+            <a href="https://www.pocketbattlesnftwar.com/" target="_blank">Site Oficial</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="icon">
+        <img src="img/giantN2.jpg">
+        </div>
+        <h1>GiantN</h1>
+        <div class="content">
+            <p> Free to play: Sim </p>
+            <p> Ultimo saque: 99/99/9999</p>
+            <p> Dias jogando: 15 </p>
+            <p> Lucro: USD 10 </p>
+            <a href="https://www.gemhub.net/games/giantn_en.html" target="_blank">Site Oficial</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="icon">
+        <img src="img/idleluca.jpg">
+        </div>
+        <h1>Idle Luca</h1>
+        <div class="content">
+            <p> Free to play: Sim </p>
+            <p> Ultimo saque: 99/99/9999</p>
+            <p> Dias jogando: 15 </p>
+            <p> Lucro: USD 10 </p>
+            <a href="https://idleluca.com2us.com/pt" target="_blank">Site Oficial</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="icon">
+        <img src="img/ChromaticSouls.jpg">
+        </div>
+        <h1>Chromatic Souls</h1>
+        <div class="content">
+            <p> Free to play: Sim </p>
+            <p> Ultimo saque: 99/99/9999</p>
+            <p> Dias jogando: 15 </p>
+            <p> Lucro: USD 10 </p>
+            <a href="https://chromaticsouls.c2x.world/en" target="_blank">Site Oficial</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="icon">
+        <img src="img/Lost_Centuria.jpg">
+        </div>
+        <h1>Lost Centuria</h1>
+        <div class="content">
+            <p> Free to play: Sim </p>
+            <p> Ultimo saque: 99/99/9999</p>
+            <p> Dias jogando: 15 </p>
+            <p> Lucro: USD 10 </p>
+            <a href="https://summonerswar.com/en/lostcenturia" target="_blank">Site Oficial</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="icon">
+        <img src="img/Heroblaze.jpg">
+        </div>
+        <h1>Hero Blaze</h1>
+        <div class="content">
+            <p> Free to play: Sim </p>
+            <p> Ultimo saque: 99/99/9999</p>
+            <p> Dias jogando: 15 </p>
+            <p> Lucro: USD 10 </p>
+            <a href="https://heroblaze3kd.io/" target="_blank">Site Oficial</a>
+        </div>
+    </div>
+    </div>
+</body>
 </html>
